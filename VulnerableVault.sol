@@ -1,3 +1,4 @@
+const VulnerableVault = `
 // SPDX-Licence-Identifier: MIT
 pragma solidiy ^0.8.0; 
 Contract VulnerableVault{
@@ -13,3 +14,5 @@ function withdraw(uint256 amount) public {
     require(sent, "failed to send the amount");
     balances[msg.sender] -=amount;
 }
+}
+`;
